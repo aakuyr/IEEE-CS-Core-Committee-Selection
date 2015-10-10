@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <style type="text/css">
+        body {
+            background-color: #f4f4f4;
+            color: #5a5656;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        a { text-decoration: none; }
+        h1 { font-size: 1em; }
+        h1, p {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .uppercase { text-transform: uppercase; }
+        #login {
+            margin: 50px auto;
+            width: 300px;
+        }
+        form fieldset input[type="text"], input[type="password"] {
+            background-color: #e5e5e5;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            color: #5a5656;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            height: 50px;
+            outline: none;
+            padding: 0px 10px;
+            width: 280px;
+            -webkit-appearance:none;
+        }
+        form fieldset input[type="submit"] {
+            background-color: #008dde;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            color: #f4f4f4;
+            cursor: pointer;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            height: 50px;
+            text-transform: uppercase;
+            width: 300px;
+            -webkit-appearance:none;
+        }
+        form fieldset a {
+            color: #5a5656;
+            font-size: 10px;
+        }
+        form fieldset a:hover { text-decoration: underline; }
+        .btn-round {
+            background-color: #5a5656;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            color: #f4f4f4;
+            display: block;
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            margin: 30px 125px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="login">
+    <h1 text-align:center><strong>Welcome to IEEE-CS Core Committee selections.</strong> <br>Register below</h1>
+    <form action="javascript:void(0);" method="get">
+        <fieldset>
+            <p><form action="/junior/j.html" method="post">{{ form.as_p }}<input type="text" onBlur="if(this.value=='')this.value='Registration Number'" onFocus="if(this.value=='Registration Number')this.value='' " placeholder="Registration Number" style='text-transform:uppercase'></p></form>
+    <p><input type="Text" onBlur="if(this.value=='')this.value='Name'" onFocus="if(this.value=='Name')this.value='' " placeholder="Name" style='text-transform:uppercase'></p>
+    <p><input type="Text" onBlur="if(this.value=='')this.value='School'" onFocus="if(this.value=='School')this.value='' " placeholder="School" style='text-transform:uppercase'></p>
+    <p><input type="Text" onBlur="if(this.value=='')this.value='Phone Number'" onFocus="if(this.value=='Phone Number')this.value='' " placeholder="Phone Number" style='text-transform:uppercase'></p>
+    <p><input type="submit" value="Login"></p>
+    </fieldset>
+    </form>
+</body>
+</html>
