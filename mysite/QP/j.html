@@ -1,10 +1,57 @@
 <html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+<style type="text/css">
+	#tarun
+	{background-color: #BDBDBD;}
+	#tarun img
+	{ 	padding:20px;
+		max-width:250px;
+	}
+	#tarun h2
+	{ 	position:absolute;
+		left:500px;
+		top:40px;
+	}
+	body {
+    background: url(http://netdna.webdesignerdepot.com/uploads/2012/10/featured47@wdd2x.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     }
+    .container{
+        background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+</style>
+</head>
 <body>
-{% block content %}
-{% for i in Question.objects.all %}
-<h3>
-    Sai is awesome.
-</h3>
-{% endfor %}
-{% endblock %}
-</body>
+ {% block content %}
+ <div id = "tarun">
+         <img src="http://prdc.dependability.org/PRDC2015/images/IEEE%20CS.gif">
+         <h2>Question Paper</h2>
+ </div>
+ <br>
+ <div class="container" align="center">
+ {% for i in Question_list %} 
+   <div class="row" align="center">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>{{ i }}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ {% endfor %}
+ </div>
+ {% endblock %}
+ </body> 
